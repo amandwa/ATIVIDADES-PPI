@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Especificidade no CSS</title>
+    <style>
+        li {color: red;}
+
+        .churras {color: green;}
+
+        .fruta {color: gray;}
+
+        li + li.churras {color: black;}
+
+        .churras[draggable="true"] {color: magenta;}
+
+        #lip1, #lip2 #lip3 {color: blue;}
+
+        #lip3.fruta {color: orange;}
+
+        ol > li.churras#lip5 {color: purple;}
+    </style>
+</head>
+<body>
+    <ol>
+        <li id="lip0">Abacaxi</li>
+        <p>Aplica a regra 1 (li {color: red;}) pois é um <li> sem classes ou atributos específicos.</p>
+
+        <li class="fruta">Melão</li>
+        <p>Aplica a regra 3 (.fruta {color: gray;}) por ter a classe "fruta".</p>
+
+        <li id="lip2" class="fruta">Pera</li>
+        <p>Aplica a regra 6 (#lip1, #lip2, #lip3 {color: blue;}) por ter o ID "lip2".</p>
+
+        <li id="lip3" class="fruta">Uva</li>
+        <p>Aplica a regra 7 (#lip3.fruta {color: orange;}) por ter o ID "lip3" e a classe "fruta".</p>
+
+        <li id="lip4" class="fruta">Maçã</li>
+        <p>Aplica a regra 3 (.fruta {color: gray;}) pois tem a classe "fruta" e nenhuma regra mais específica.</p>
+
+        <li class="churras">Carne</li>
+        <p>Aplica a regra 2 (.churras {color: green;}) por ter a classe "churras".</p>
+
+        <li class="churras">Linguiça</li>
+        <p>Aplica a regra 2 (.churras {color: green;}) pelo mesmo motivo do item anterior.</p>
+
+        <li id="lip7" class="churras" draggable="true">Pão de alho</li>
+        <p>Aplica a regra 5 (.churras[draggable="true"] {color: magenta;}) pois possui a classe "churras" e o atributo draggable.</p>
+    </ol>
+</body>
+</html>

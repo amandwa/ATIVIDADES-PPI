@@ -1,0 +1,56 @@
+/* Quando falo de seletor, falo daquilo que quero estilizar. Pode ser uma tag HTML, uma classe, um id, entre outros.
+Agora, propriedade é aquilo que você quer mudar no seletor (exemplo: cor, tamanho da fonte, etc).
+E o valor, como eu vou querer que a minha propriedade se comporte (exemplo: azul, 16px, etc).
+seletor {
+  propriedade: valor;
+}  */ 
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Básico de CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: lightgray; /
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            color: blue; 
+        }
+
+        span {
+            font-weight: bold; 
+            background-color: yellow;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Bem-vindo ao Meu Site</h1>
+    <p>Este é um parágrafo com texto simples.</p>
+
+    <p>Outro parágrafo <span>com palavras destacadas</span> usando a tag <span>.</p>
+</body>
+</html>
+
+
+
+
+
+
+

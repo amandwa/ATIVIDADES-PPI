@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Blocos Coloridos Horizontais</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .bloco {
+            flex: 1;
+            height: 150px;
+            text-align: center;
+            font-size: 30px;
+            line-height: 150px;
+        }
+
+        .bloco1 { background-color: blueviolet; }
+        .bloco2 { background-color: green; }
+        .bloco3 { background-color: red; }
+        .bloco4 { background-color: yellow; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="bloco bloco1">1</div>
+        <p>Este bloco está roxo porque a classe .bloco1 aplica a cor de fundo blueviolet.</p>
+
+        <div class="bloco bloco2">2</div>
+        <p>Este bloco está verde porque a classe .bloco2 aplica a cor de fundo green.</p>
+
+        <div class="bloco bloco3">3</div>
+        <p>Este bloco está vermelho porque a classe .bloco3 aplica a cor de fundo red.</p>
+
+        <div class="bloco bloco4">4</div>
+        <p>Este bloco está amarelo porque a classe .bloco4 aplica a cor de fundo yellow.</p>
+    </div>
+
+    <p>Os blocos estão lado a lado porque o container usa "display: flex;", permitindo o alinhamento horizontal.</p>
+
+</body>
+</html>
