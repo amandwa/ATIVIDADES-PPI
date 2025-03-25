@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>O que é HTTP?</title>
+</head>
+<body>
+    <h1>O que é o protocolo HTTP?</h1>
+    <p>HTTP (Hypertext Transfer Protocol) é um protocolo usado para comunicação na Web. Ele permite a transferência de páginas e arquivos entre clientes e servidores.</p>
+    
+    <div>
+        <h2>Como o HTTP funciona?</h2>
+        <p>O HTTP funciona com requisições e respostas entre clientes (navegadores) e servidores.</p>
+        
+        <img src="http_request.png" alt="Exemplo de requisição HTTP">
+        
+        <h3>Exemplo de Requisição HTTP</h3>
+        <p>A seguir, um exemplo de requisição HTTP:</p>
+        <pre>
+            GET /index.html HTTP/1.1
+            Host: www.exemplo.com
+            User-Agent: Mozilla/5.0
+        </pre>
+        
+        <h3>Exemplo de Resposta HTTP</h3>
+        <p>O servidor responde com um código de status e o conteúdo solicitado:</p>
+        <pre>
+            HTTP/1.1 200 OK
+            Content-Type: text/html
+            Content-Length: 1234
+        </pre>
+    </div>
+</body>
+</html>
+
+
